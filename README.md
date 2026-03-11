@@ -45,4 +45,3 @@ token-faucet-dapp/
 
 ## Gợi ý trưng bày trên GitHub
 
-Ông chủ nên mở demo, bấm nhận token vài lần, rồi chụp ảnh giao diện có lịch sử giao dịch để thêm vào README.
