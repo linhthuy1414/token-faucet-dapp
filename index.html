@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Token Faucet DApp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="card hero">
+        <p class="tag">Repo blockchain thứ 3</p>
+        <h1>Token Faucet DApp</h1>
+        <p class="subtitle">
+          Ứng dụng mô phỏng faucet token trên mạng thử nghiệm: kết nối ví, nhận token demo và theo dõi lịch sử nhận token.
+        </p>
+        <div class="hero-actions">
+          <button id="connect-wallet">Kết nối ví</button>
+          <button id="claim-token" class="secondary">Nhận 10 TEST</button>
+        </div>
+        <p id="wallet-status" class="status">Chưa kết nối ví.</p>
+      </section>
+
+      <section class="grid">
+        <div class="card">
+          <h2>Thông tin ví</h2>
+          <div class="stats">
+            <div class="stat-box">
+              <span>Số dư TEST</span>
+              <strong id="token-balance">0 TEST</strong>
+            </div>
+            <div class="stat-box">
+              <span>Số lần nhận</span>
+              <strong id="claim-count">0</strong>
+            </div>
+            <div class="stat-box">
+              <span>Trạng thái</span>
+              <strong id="claim-status">Chưa sẵn sàng</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Giới hạn faucet</h2>
+          <ul class="rules">
+            <li>Mỗi ví chỉ nhận được token sau mỗi 30 giây trong bản mô phỏng.</li>
+            <li>Dữ liệu đang lưu trên trình duyệt để làm bản demo.</li>
+            <li>Trong bản thật, faucet sẽ gọi smart contract và gửi token testnet.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="section-header">
+          <h2>Lịch sử nhận token</h2>
+          <button id="reset-data" class="ghost">Đặt lại dữ liệu</button>
+        </div>
+        <ul id="history-list" class="history-list"></ul>
+        <p id="empty-state" class="empty-state">Chưa có lượt nhận token nào.</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
